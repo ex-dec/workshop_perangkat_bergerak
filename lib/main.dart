@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'WPPB',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -31,9 +34,32 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  // Latihan
+  //String _text = "Saved number : ";
+
+  String _text = "Prime number : ";
+
   void _incrementCounter() {
     setState(() {
       _counter++;
+
+      //  Latihan
+      // if(_counter % 3 == 0 && _counter % 2 == 0){
+      //   _text += '${_counter} ';
+      // }
+
+      //  Tugas
+      // if(_counter >= 2){
+      //   int p = 0;
+      //   for(int i=1; i<=_counter ; i++){
+      //     if(_counter % i == 0){
+      //       p++;
+      //     }
+      //   }
+      //   if(p == 2){
+      //     _text += '${_counter} ';
+      //   }
+      // }
     });
   }
 
@@ -53,6 +79,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              '$_text',
+              style: Theme.of(context).textTheme.subtitle1,
             ),
           ],
         ),
