@@ -34,14 +34,25 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  // Percobaan
+  String _text = "";
+
   // Latihan
   //String _text = "Saved number : ";
 
-  String _text = "Prime number : ";
+  // Tugas
+  //String _text = "Prime number : ";
 
   void _incrementCounter() {
     setState(() {
       _counter++;
+
+      //  Percobaan
+      if(_counter % 2 == 0){
+        _text = "Genap";
+      } else {
+        _text = "Ganjil";
+      }
 
       //  Latihan
       // if(_counter % 3 == 0 && _counter % 2 == 0){
