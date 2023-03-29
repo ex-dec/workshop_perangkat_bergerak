@@ -60,27 +60,39 @@ class DetailScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               height: 150,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget> [
                   Padding(
                     padding: const EdgeInsets.all(4),
-                    child: Image.network(
-                        'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(25),
+                      child: Image.network(
+                          'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                    )
                   ),
                   Padding(
                     padding: const EdgeInsets.all(4),
-                    child: Image.asset('assets/images/monkasel_1.jpg'),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(25),
+                      child: Image.asset('assets/images/monkasel_1.jpg'),
+                    )
                   ),
                   Padding(
                     padding: const EdgeInsets.all(4),
-                    child: Image.asset('assets/images/monkasel_2.jpg'),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(25),
+                        child: Image.asset('assets/images/monkasel_2.jpg'),
+                      )
                   ),
                   Padding(
                     padding: const EdgeInsets.all(4),
-                    child: Image.asset('assets/images/monkasel_3.jpg'),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(25),
+                        child: Image.asset('assets/images/monkasel_3.jpg'),
+                      )
                   ),
                 ],
               ),
