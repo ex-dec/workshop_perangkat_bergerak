@@ -18,7 +18,7 @@ class DetailScreen extends StatelessWidget {
                 place.imageAsset,
             ),
             Container(
-              margin: const EdgeInsets.only(top: 15),
+              margin: const EdgeInsets.only(top: 10),
               child: Text(
                 place.name,
                 textAlign: TextAlign.center,
@@ -29,7 +29,7 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 15),
+              margin: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget> [
@@ -55,7 +55,7 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 10, left: 30, right: 30, bottom: 20),
+              margin: const EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 20),
               child: const Text(
                 "Museum inside a decommisssioned Russion war submarine with tours & an adjacent park with cafes. Clean and well maintained. Car park cost 10k, entrace fee 15k/person. You can see KRI Pasopati there, it is a russian whiskey class. You can also watch the video about the Indonesian Navy at building beside the submarine",
                 textAlign: TextAlign.center,
@@ -66,7 +66,7 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 150,
+              height: 125,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget> [
