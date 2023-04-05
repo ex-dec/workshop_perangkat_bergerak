@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:workshop_perangkat_bergerak/main_screen.dart';
+import 'package:workshop_perangkat_bergerak/daftar_isi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'WPPB',
+      debugShowCheckedModeBanner: false,
+      title: 'Project UTS',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.lightGreen,
       ),
-      home: MainScreen(),
+      home: DaftarIsiPage(),
     );
   }
 }
