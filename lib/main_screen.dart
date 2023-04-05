@@ -29,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
                 )
               );
             },
-            icon: const Icon(Icons.done_outline)
+            icon: const Icon(Icons.done_rounded)
           )
         ],
       ),

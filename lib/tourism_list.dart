@@ -178,8 +178,8 @@ class _TourismListState extends State<TourismList>{
             setState(() {
               if(value!=null) {
                 value
-                    ? doneTourismPlaceList.add(place)
-                    : doneTourismPlaceList.remove(place);
+                  ? doneTourismPlaceList.add(place)
+                  : doneTourismPlaceList.remove(place);
               }
             });
           },
