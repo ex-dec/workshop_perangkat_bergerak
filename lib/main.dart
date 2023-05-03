@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop_perangkat_bergerak/calculator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Workshop Flutter'),
+      // home: const MyHomePage(title: 'Workshop Flutter'),
+      home: CalculatorPage(),
     );
   }
 }
@@ -52,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
