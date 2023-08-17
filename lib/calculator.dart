@@ -40,7 +40,6 @@ class _CalculatorPageState extends State<CalculatorPage> {
     });
   }
 
-  // method untuk menghitung hasil dari operasi yang dipilih
   void _calculate() {
     setState(() {
       double secondOperand = double.parse(_display);
